@@ -3,11 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+.imagem_lateral{
+    display: none;
+}
 body{
-    background-color:#4E5BEE;
     width: 100vw;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color:#4E5BEE;
 }
 header{
     display: flex;
@@ -34,12 +43,16 @@ form>input{
     height: 15%;
     width: 80%;
     border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
 }
 form>input::placeholder{
     color: transparent;
     text-shadow: 8px 0 0 rgb(255, 255, 255);
     font-size: 30px;
     font-weight: bolder;
+    text-align: initial;
 }
 form>button{
     background-color:  #F8F8F8;
@@ -66,4 +79,39 @@ footer>a{
     color:  #F8F8F8;
     text-decoration: none;
     font-weight: bolder;
+}
+@media (min-width:800px){
+ .container{
+     width: 45%;
+ }
+ .imagem_lateral{
+     display: initial;
+     width: auto;
+     height: auto;
+     max-width: 55%;
+     max-height: 100%;
+ }
+ header>img{
+    width: 30%;
+    height: 30%;
+}
+form>input{
+    height: 20%;
+    width: 50%;
+}
+form{
+    gap: 20px;
+}
+form>button{
+    height: 20%;
+    width: 50%;
+    font-size: 18px;
+}
+footer>p{
+    font-size: 12px;
+}
+footer>a{
+    font-size: 12px;
+}
+ 
 }
