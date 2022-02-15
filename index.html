@@ -4,8 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grab - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/97e4fc1f3a.js" crossorigin></script>
   </head>
   <body>
-    
+    <article>
+      <section class="formulario">
+        <img src="../grab-pagina-de-login/assets/logo-grab.svg" alt="">
+        <form method="post" onSubmit="return ( verifica() )" name="frmEnvia">
+          <div>
+            <i class="fas fa-at"></i>
+            <input type="email" name="email" id="InputEmail" class="input" placeholder="E-mail" onblur="checarEmail();" >
+          <p id="paragrafo"></p>  
+          </div>
+          <div>
+            <i class="fas fa-lock"></i>
+            <input type="password" name="senha" id="InputSenha" class="input" placeholder="Senha">
+          </div>
+            <input type="submit" class="botao" value="entrar">
+          </form>
+        <p>Problemas para entrar?<br><a href="#">Clique aqui</a></p>
+        </section>
+      <section class="secao-imagem">
+      <img src="../grab-pagina-de-login/assets/undraw_interview_rmcf.svg" alt="">
+      </section>
+    </article>
+    <script src="index.js"></script>
   </body>
 </html>
