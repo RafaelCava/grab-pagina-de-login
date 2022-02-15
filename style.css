@@ -50,7 +50,7 @@ input:focus{
 
 input::placeholder {
     color: white;
-  }
+}
 
 i{
     position: absolute;
@@ -83,7 +83,7 @@ i{
 
 .formulario{
     background-color: #4E5BEE;
-    width: 40%;
+    width: 35%;
     padding: 99px 20px;
     height: 100vh;
     gap: 100px;
@@ -113,4 +113,28 @@ i{
 
 .secao-imagem img{
     width: 100%;
+}
+
+@media screen and (max-width: 800px){
+    .secao-imagem{
+        display: none;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    form{
+        display: flex;
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+
+    input{
+        width: 200%;
+    }
+
+    .botao{
+        margin-left: 65px;
+    }
 }
