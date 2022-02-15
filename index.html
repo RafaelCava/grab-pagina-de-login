@@ -15,9 +15,11 @@
         <img src="assets/logo-grab.svg" alt="">
       </header>
       <form action="">
-        <input type="email" placeholder="@">
-        <input type="password" placeholder="&#x1F512">
-        <button>Entrar</button>
+        <input type="email" placeholder="@" id="email">
+        <label for="" class="mensagem_erro" id="m1">email invalido</label>
+        <input type="password" placeholder="&#x1F512" id="senha">
+        <label for="" class="mensagem_erro" id="m2">senha invalida</label>
+        <input type="submit" value="entrar" class="button" id="send">
       </form>
       <footer>
         <p>problemas para entrar?</p>
@@ -25,5 +27,6 @@
       </footer>
     </main>
     <img src="assets/undraw_interview_rmcf.svg" class="imagem_lateral" alt="">
+    <script src="login.js"></script>
   </body>
 </html>
