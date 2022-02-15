@@ -1,0 +1,15 @@
+
+  
+@media (max-width: 768px) {
+html {
+    font-size: 45;
+}
+section {
+    width: 100vw;
+}
+img .fundo{
+    display: none;
+}
+
+
+}
