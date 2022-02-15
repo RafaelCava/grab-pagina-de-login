@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="https://material.io/resources/icons/?style=outline">
   <script src="https://kit.fontawesome.com/97e4fc1f3a.js" crossorigin></script>
   <title>Grab - Login</title>
@@ -19,12 +20,12 @@
       
       <div class="loginInfo">
         <form action="">
-          <div class="inseEmail">
-            email
-            <input class="email" type="text" name="email" id="email">
+          <div class="inseEmail" data-error="por favor, insira um email válido">
+            <i class="fa fa-at"></i>
+            <input class="email" type="email" name="email" id="email">
           </div>
           <div class="inseSenha">
-            senha
+            <i class="fa fa-key"></i>
             <input type="password" name="password" id="password">
           </div>
           <input type="submit" value="Entrar" class="button">
@@ -37,5 +38,6 @@
     </section>
     <img src="assets/undraw_interview_rmcf.svg" alt="fundo" class="fundo">
   </main>
+  <script src="css/index.js"></script>
 </body>
 </html>
